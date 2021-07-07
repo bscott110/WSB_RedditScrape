@@ -3,8 +3,8 @@ import praw
 with open('pw.txt') as file:
     pw_line = file.readline()
 
-reddit = praw.Reddit(client_id='DL-0oLtcYyalnDxjY5hOcw', client_secret='odOqD6s1ser0-vkMTHGhyli_ABM99w',
-                     username='BScott110', password=pw_line, user_agent='APITEST_0.0.2')
+reddit = praw.Reddit(client_id='xxx', client_secret='xxx',
+                     username='xxx', password=pw_line, user_agent='APITEST_0.0.2')
 
 submissions0 = reddit.subreddit('wallstreetbets').top(limit=5)
 
