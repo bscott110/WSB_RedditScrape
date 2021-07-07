@@ -15,14 +15,14 @@ for submission in submissions0:
 
 submissions1 = reddit.subreddit('wallstreetbets').hot(limit=5)
 
-print("Hottest 5 WSB Threads:")
+print("5 Hottest WSB Threads:")
 for submission in submissions1:
     i = submission.title
     print("-"+i)
 
 submissions2 = reddit.subreddit('wallstreetbets').new(limit=5)
 
-print("Newest 5 WSB Threads:")
+print("5 Newest WSB Threads:")
 for submission in submissions2:
     i = submission.title
     print("-"+i)
