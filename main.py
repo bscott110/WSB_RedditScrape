@@ -1,8 +1,10 @@
 import praw
 
+#create a txt file called pw.txt and enter your password on the first line
 with open('pw.txt') as file:
     pw_line = file.readline()
 
+#create a reddit app and enter your respective credentials here
 reddit = praw.Reddit(client_id='xxx', client_secret='xxx',
                      username='xxx', password=pw_line, user_agent='APITEST_0.0.2')
 
