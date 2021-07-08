@@ -8,7 +8,7 @@ with open('pw.txt') as file:
 reddit = praw.Reddit(client_id='xxx', client_secret='xxx',
                      username='xxx', password=pw_line, user_agent='APITEST_0.0.2')
 
-#creat a for loop for each sort
+#create a for loop for each sort
 submissions0 = reddit.subreddit('wallstreetbets').top(limit=5)
 
 print("Top 5 WSB Threads:")
